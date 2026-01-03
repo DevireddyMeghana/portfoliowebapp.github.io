@@ -2,146 +2,146 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
     <title>Devireddy Meghana</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body class="light-mode">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
+        <a class="navbar-brand font-weight-bold" href="#">Meghana</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About </a>
-
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contant">Contant</a>
-                </li>
-
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
+            <button class="btn btn-outline-secondary ml-3"
+                onclick="toggleDarkMode()">🌙</button>
         </div>
     </nav>
-    <br>
-    <hr>
-    <br>
 
-    <div id="home" class="jumbotron">
-        <h1 class="display-4">Devireddy Meghana </h1>
-        <p class="lead">This is D.Meghana currently studing final year in the stream CSE(AI&ML).</p>
-        <hr class="my-4">
-        <p>Skills:UI/UX designer,C,Python</p>
-        <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/devireddy-meghana-82ab93299/"
-            role="button">Linkedin</a>
-    </div>
-    <div id="about" class="card" style="width: 18rem;">
-        <img src="images/3.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Devireddy Meghana</h5>
-            <p class="card-text">Roll No:228U1A3309</p>
-            <a href="https://github.com/DevireddyMeghana" class="btn btn-primary">Github</a>
+    <!-- Home -->
+    <section id="home" class="jumbotron">
+        <h1 class="display-4 font-weight-bold">Devireddy Meghana</h1>
+        <p class="lead">Final Year CSE (AI & ML)</p>
+        <p>UI/UX Designer | Python Developer | C Programmer</p>
+        <a href="https://www.linkedin.com/in/devireddy-meghana-82ab93299/"
+            target="_blank" class="btn btn-light btn-lg">
+            LinkedIn
+        </a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container text-center my-5">
+        <h2>About Me</h2>
+        <div class="card mx-auto mt-4">
+            <img src="images/3.png" class="card-img-top" alt="Profile">
+            <div class="card-body">
+                <h5 class="card-title">Devireddy Meghana</h5>
+                <p class="card-text">Roll No: 228U1A3309</p>
+                <a href="https://github.com/DevireddyMeghana"
+                    target="_blank" class="btn btn-dark">
+                    GitHub
+                </a>
+            </div>
         </div>
-    </div>
-    <h2 id="skills">Skills</h2>
-    <h4>C++</h4>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <h4>C</h4>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-            aria-valuemax="100"></div>
-    </div>
-    <h4>Java</h4>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-            aria-valuemax="100"></div>
-    </div>
-    <h4>UI/UX</h4>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-            aria-valuemax="100"></div>
-    </div>
-    <h4>Python</h4>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
-            aria-valuemax="100"></div>
-    </div>
-    <br>
-    <hr>
-    <br>
-    <h2 id="contant">Contant</h2>
-    <p>If you want to connect to me please fill out the form below:</p>
-    <div class="form">
-        <form action="https://formspree.io/f/xkgddqkj" method="POST">
+    </section>
 
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+    <!-- Skills -->
+    <section id="skills" class="container my-5">
+        <h2 class="text-center">Skills</h2>
+
+        <p>C++</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-info" style="width:40%">40%</div>
+        </div>
+
+        <p>C</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width:60%">60%</div>
+        </div>
+
+        <p>Java</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-warning" style="width:50%">50%</div>
+        </div>
+
+        <p>UI / UX</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-primary" style="width:75%">75%</div>
+        </div>
+
+        <p>Python</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-dark" style="width:85%">85%</div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Me</h2>
+
+        <form action="https://formspree.io/f/xkgddqkj"
+            method="POST" class="contact-form mx-auto mt-4">
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" name="name" required>
             </div>
 
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
-                    required>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" name="email" required>
             </div>
 
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter message"
-                    required></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="phone no" class="form-label">Phone no</label>
-                <input type="phone no" class="form-control" id="phone no" name="phone no" placeholder="Enter your Phone no"
-                    required>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" class="form-control" name="phone" required>
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control" rows="3" name="message" required></textarea>
+            </div>
 
+            <button type="submit" class="btn btn-primary btn-block">Send</button>
         </form>
+    </section>
 
-    </div>
-    <form action <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        © 2026 Devireddy Meghana
+    </footer>
 
-        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-            crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-    -->
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            document.body.classList.toggle("light-mode");
+        }
+    </script>
+
 </body>
-
 </html>
+
+
